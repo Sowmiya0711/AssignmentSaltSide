@@ -125,7 +125,7 @@
 				082B15B525ED4D96003827DF /* View */,
 				082B15A225ED3A97003827DF /* Services */,
 				082B159725ED2FB2003827DF /* Model */,
-				082B159125ED2F0E003827DF /* ViewModel */,
+				082B159125ED2F0E003827DF /* DataSource */,
 				082B155E25ED0108003827DF /* AppDelegate.swift */,
 				082B156025ED0108003827DF /* SceneDelegate.swift */,
 				082B156225ED0108003827DF /* ViewController.swift */,
@@ -157,13 +157,13 @@
 			path = AssignmentSaltSideUITests;
 			sourceTree = "<group>";
 		};
-		082B159125ED2F0E003827DF /* ViewModel */ = {
+		082B159125ED2F0E003827DF /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
 				082B159225ED2F37003827DF /* ItemTableViewDataSource.swift */,
 				082B159D25ED3197003827DF /* ItemTableViewCell.swift */,
 			);
-			path = ViewModel;
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		082B159725ED2FB2003827DF /* Model */ = {
