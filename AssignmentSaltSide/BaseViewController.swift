@@ -2,7 +2,7 @@
 //  BaseViewController.swift
 //  AssignmentSaltSide
 //
-//  Created by CSS on 01/03/21.
+//  Created by Sowmiya on 01/03/21.
 //
 
 import UIKit
@@ -15,6 +15,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
     }
    
+    //MARK: Show activity indicator
     func showActivityAndDisableInteraction() {
         if let window = UIApplication.shared.keyWindow {
             if fullScreenActivityView == nil {
@@ -30,6 +31,7 @@ class BaseViewController: UIViewController {
         }
     }
     
+    //MARK: Hide activity indicator
     func hideActivityAndDisableInteraction() {
         if let window = UIApplication.shared.keyWindow {
             fullScreenActivityView?.isHidden = true
