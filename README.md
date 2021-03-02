@@ -1,4 +1,4 @@
-# AssignmentSaltSide
+# Assignment
 
 * Got Items list from api using url session
 * Listed the items in tableview
