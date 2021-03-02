@@ -2,7 +2,7 @@
 //  FullScreenActivityView.swift
 //  AssignmentSaltSide
 //
-//  Created by CSS on 01/03/21.
+//  Created by Sowmiya on 01/03/21.
 //
 
 import Foundation
@@ -29,8 +29,14 @@ class FullScreenActivityView: UIImageView {
         initAndAddActivityIndicator()
     }
     
+    //MARK: Setting activityIndicator
     private func initAndAddActivityIndicator() {
-        activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
+        if #available(iOS 13.0, *) {
+            activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
+            
+        } else {
+            activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.whiteLarge)
+        }
         activityIndicator.color = UIColor.black
         activityIndicator.hidesWhenStopped = true
         activityIndicator.center = center

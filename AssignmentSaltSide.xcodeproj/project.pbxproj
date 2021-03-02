@@ -23,7 +23,9 @@
 		082B15AE25ED3C7A003827DF /* RESTTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B15AD25ED3C7A003827DF /* RESTTasks.swift */; };
 		082B15B725ED4DAB003827DF /* FullScreenActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B15B625ED4DAB003827DF /* FullScreenActivityView.swift */; };
 		082B15BC25ED4EF7003827DF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B15BB25ED4EF7003827DF /* BaseViewController.swift */; };
-		082B15C225ED5519003827DF /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B15C125ED5519003827DF /* UIImageView+Extension.swift */; };
+		082B15C225ED5519003827DF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B15C125ED5519003827DF /* UIImage+Extension.swift */; };
+		0835191A25EDFB9A00E1EDAB /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0835191925EDFB9A00E1EDAB /* ItemDetailViewController.swift */; };
+		0835191F25EDFE7800E1EDAB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0835191E25EDFE7800E1EDAB /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +68,9 @@
 		082B15AD25ED3C7A003827DF /* RESTTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTTasks.swift; sourceTree = "<group>"; };
 		082B15B625ED4DAB003827DF /* FullScreenActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenActivityView.swift; sourceTree = "<group>"; };
 		082B15BB25ED4EF7003827DF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		082B15C125ED5519003827DF /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		082B15C125ED5519003827DF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		0835191925EDFB9A00E1EDAB /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		0835191E25EDFE7800E1EDAB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 				082B156925ED0109003827DF /* LaunchScreen.storyboard */,
 				082B156C25ED0109003827DF /* Info.plist */,
 				082B15BB25ED4EF7003827DF /* BaseViewController.swift */,
+				0835191925EDFB9A00E1EDAB /* ItemDetailViewController.swift */,
 			);
 			path = AssignmentSaltSide;
 			sourceTree = "<group>";
@@ -190,7 +195,8 @@
 		082B15C025ED54F6003827DF /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				082B15C125ED5519003827DF /* UIImageView+Extension.swift */,
+				082B15C125ED5519003827DF /* UIImage+Extension.swift */,
+				0835191E25EDFE7800E1EDAB /* UIViewController+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -329,12 +335,14 @@
 				082B159325ED2F37003827DF /* ItemTableViewDataSource.swift in Sources */,
 				082B15BC25ED4EF7003827DF /* BaseViewController.swift in Sources */,
 				082B159925ED2FC2003827DF /* ItemsModel.swift in Sources */,
+				0835191F25EDFE7800E1EDAB /* UIViewController+Extension.swift in Sources */,
 				082B15A425ED3AE4003827DF /* RESTConstants.swift in Sources */,
 				082B15A925ED3BD4003827DF /* RESTTaskUtil.swift in Sources */,
-				082B15C225ED5519003827DF /* UIImageView+Extension.swift in Sources */,
+				082B15C225ED5519003827DF /* UIImage+Extension.swift in Sources */,
 				082B155F25ED0108003827DF /* AppDelegate.swift in Sources */,
 				082B159E25ED3197003827DF /* ItemTableViewCell.swift in Sources */,
 				082B156125ED0108003827DF /* SceneDelegate.swift in Sources */,
+				0835191A25EDFB9A00E1EDAB /* ItemDetailViewController.swift in Sources */,
 				082B15B725ED4DAB003827DF /* FullScreenActivityView.swift in Sources */,
 				082B15AE25ED3C7A003827DF /* RESTTasks.swift in Sources */,
 			);
@@ -513,12 +521,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8GVPUC7W4;
 				INFOPLIST_FILE = AssignmentSaltSide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AssignmentSaltSide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Frost.AssignmentSaltSide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,12 +541,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8GVPUC7W4;
 				INFOPLIST_FILE = AssignmentSaltSide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AssignmentSaltSide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Frost.AssignmentSaltSide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

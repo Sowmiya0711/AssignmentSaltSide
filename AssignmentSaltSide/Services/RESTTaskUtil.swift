@@ -2,7 +2,7 @@
 //  RESTTaskUtil.swift
 //  AssignmentSaltSide
 //
-//  Created by CSS on 01/03/21.
+//  Created by Sowmiya on 01/03/21.
 //
 
 import Foundation
@@ -25,6 +25,7 @@ class RESTTaskUtil: NSObject {
         self.init(withURLString: "https://gist.githubusercontent.com/ashwini9241/6e0f26312ddc1e502e9d280806eed8bc/raw/7fab0cf3177f17ec4acd6a2092fc7c0f6bba9e1f/saltside-json-data")
     }
     
+    //MARK: DataTask Functionality
     func dataTask(request urlRequest: URLRequest,method: String,completion: @escaping RESTConstants.TaskCompletionHandler) {
         var request = urlRequest
         request.httpMethod = method
@@ -59,6 +60,7 @@ class RESTTaskUtil: NSObject {
         sessionTask?.resume()
     }
     
+    //MARK: GET Method
     func get(request: URLRequest,completion: @escaping RESTConstants.TaskCompletionHandler) {
         dataTask(request: request, method: "GET", completion: completion)
     }

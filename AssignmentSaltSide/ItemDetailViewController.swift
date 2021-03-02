@@ -1,18 +1,21 @@
 //
-//  ItemTableViewCell.swift
+//  ItemDetailViewController.swift
 //  AssignmentSaltSide
 //
-//  Created by Sowmiya on 01/03/21.
+//  Created by Sowmiya on 02/03/21.
 //
 
-import Foundation
 import UIKit
 
-class ItemTableViewCell: UITableViewCell {
+class ItemDetailViewController: UIViewController {
+
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var itemImage: UIImageView!
-    @IBOutlet weak var title: UILabel!
     @IBOutlet weak var desc: UILabel!
     
+    var itemData: ItemModel?
+    
+    //Download item image and cache
     var postImageURL: String? {
             didSet {
                 if let url = postImageURL {
@@ -31,7 +34,13 @@ class ItemTableViewCell: UITableViewCell {
             }
         }
     
-    override func awakeFromNib() {
-            super.awakeFromNib()
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        self.navigationItem.title = "Item Details"
+        titleLabel.text = itemData?.title
+        desc.text = itemData?.description
+        postImageURL = itemData?.image
+    }
 }
